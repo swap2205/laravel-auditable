@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Swap2205\\Auditable": "src/"
+            "Swap2205\\Auditable\\": "src/"
         }
     },
     "minimum-stability": "dev"
