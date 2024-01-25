@@ -1,4 +1,4 @@
-<?php namespace Olsgreen\Auditable;
+<?php namespace Swap2205\Auditable;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -41,7 +41,7 @@ class Changeset extends Model {
 	 */
 	public function changes()
 	{
-		return $this->hasMany('Olsgreen\Auditable\Change');
+		return $this->hasMany('Swap2205\Auditable\Change');
 	}
 
 }

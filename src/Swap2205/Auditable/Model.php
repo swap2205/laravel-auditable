@@ -1,4 +1,4 @@
-<?php namespace Olsgreen\Auditable;
+<?php namespace Swap2205\Auditable;
 
 class Model extends Illuminate\Database\Eloquent\Model {
 
@@ -17,7 +17,7 @@ class Model extends Illuminate\Database\Eloquent\Model {
 	public static function boot()
 	{
 		parent::boot();
-		self::observe(new Olsgreen\Auditable\Observer);
+		self::observe(new Swap2205\Auditable\Observer);
 	}
 
 }

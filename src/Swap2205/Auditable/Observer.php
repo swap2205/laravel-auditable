@@ -1,4 +1,4 @@
-<?php namespace Olsgreen\Auditable;
+<?php namespace Swap2205\Auditable;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -7,7 +7,7 @@ Add the repository to your `composer.json`:
 	"repositories": [
 	    {
 	        "type": "vcs",
-	        "url": "https://github.com/olsgreen/laravel-auditable"
+	        "url": "https://github.com/swap2205/laravel-auditable"
 	    }
 	],
 
@@ -22,7 +22,7 @@ Run `composer update` to update your app or `composer install` to install.
 
 After install / update you will need to run the packages migrations like so:
 
-	php artisan migrate --package="olsgreen/auditable"
+	php artisan migrate --package="swap2205/auditable"
 
 and also add `Auditable` as a service provider within your `app/config/app.php`:
 
@@ -33,7 +33,7 @@ and also add `Auditable` as a service provider within your `app/config/app.php`:
 		..........
 
 		// Auditable - add this line below the others
-		'Olsgreen\Auditable\AuditableServiceProvider',
+		'Swap2205\Auditable\AuditableServiceProvider',
 	),
 
 After this you'll be ready to go.

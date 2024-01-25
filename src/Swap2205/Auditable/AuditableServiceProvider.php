@@ -1,4 +1,4 @@
-<?php namespace Olsgreen\Auditable;
+<?php namespace Swap2205\Auditable;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -19,13 +19,13 @@ class AuditableServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		$this->app['auditable'] = $this->app->share(function($app) {
-			return new \Olsgreen\Auditable\Auditable;
+			return new \Swap2205\Auditable\Auditable;
 		});
 
 		$this->app->booting(function()
         {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('Auditable', '\Olsgreen\Auditable\AuditableFacade');
+            $loader->alias('Auditable', '\Swap2205\Auditable\AuditableFacade');
         });
 	}
 
